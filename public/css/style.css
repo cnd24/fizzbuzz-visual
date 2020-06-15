@@ -1,0 +1,48 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    margin-top: 50px;
+    color: darkcyan;
+}
+
+.color-fizz {
+    background-color: antiquewhite;
+}
+
+.color-buzz {
+    background-color: darkcyan;
+}
+
+.color-fizzbuzz {
+    background-color: #5eb5e0;
+}
+
+label {
+    color: darkcyan;
+    margin: 20px;
+    margin-right: 0;
+
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid darkcyan;
+    width: 40px;
+    margin: 20px;
+}
+
+button {
+    width: 140px;
+    height: 45px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}

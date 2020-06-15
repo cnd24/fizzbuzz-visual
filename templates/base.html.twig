@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheet %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+        <link href="/css/style.css" rel="stylesheet"/>
+    {% endblock %}
+
+</head>
+<body>
+{% block body %}
+
+    <h1 class="title uk-text-center"> FizzBuzz </h1>
+
+    <div class="uk-text-center">
+    {{ form(form) }}
+    </div>
+
+
+
+
+
+    <div class="uk-child-width-1-6@m uk-grid-small uk-grid-match uk-margin-large-right uk-margin-large-left uk-margin-medium-top" uk-grid>
+
+    {% for message in messages %}
+        {% if message == "Fizz" %}
+            <div class="">
+                <div class="uk-card uk-card-default uk-card-body color-fizz">
+                    <h3 class="uk-card-title">{{ message }}</h3>
+                </div>
+            </div>
+        {% elseif message == "Buzz" %}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body color-buzz">
+                    <h3 class="uk-card-title">{{ message }}</h3>
+                </div>
+            </div>
+        {% elseif message == "FizzBuzz" %}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body color-fizzbuzz">
+                    <h3 class="uk-card-title">{{ message }}</h3>
+                </div>
+            </div>
+        {% else %}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3 class="uk-card-title">{{ message }}</h3>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+
+
+</div>
+
+{% endblock %}
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
