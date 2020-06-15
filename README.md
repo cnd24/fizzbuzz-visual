@@ -14,3 +14,4 @@ Pour un nombre n déterminé (dans ce projet, le nombre doit être renseigné), 
 Pour récupérer ce projet, il suffira de faire un `composer install`, de lancer le serveur Symfony et de vous rendre à l'adresse /fizz
 L'algorythme utilisé se trouve dans le service FizzbuzzGenerator.php.
 
+Démonstration visuelle du projet : https://drive.google.com/file/d/1l4-R3ecM6qjfITtCkUN0en_FMj4VcXDJ/view
